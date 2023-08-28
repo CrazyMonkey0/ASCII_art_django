@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Image To ASCII{% endblock %}
+
+{% block content %}
+<h1>ASCII Art Generator</h1>
+<br>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="image">Upload an image:</label>
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Generate ASCII Art</button>
+</form>
+
+{% endblock %}

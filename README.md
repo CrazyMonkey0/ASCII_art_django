@@ -1,1 +1,1 @@
-# django_ASCII_art
+# ASCII_art_django 
